@@ -16,7 +16,7 @@ public class Questao05 {
         System.out.print("Bem-vindo ao Jogo da Adivinhação\n"
                 + "Estou pensando em um número entre 1 e 100...\n\n");
         
-        numero = numeroAleatorio.nextInt(100) + 1;
+        numero = numeroAleatorio.nextInt(99) + 1;
         
         System.out.print("Informe um número: ");
                 resposta = ler.nextInt();
