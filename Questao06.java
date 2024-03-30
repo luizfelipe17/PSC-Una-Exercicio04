@@ -28,7 +28,8 @@ public class Questao06 {
                         + "Estou pensando em um número entre 1 e 100...\n\n");
                
                   System.out.print("Informe um número: ");
-                        resposta = ler.nextInt(); 
+                        resposta = ler.nextInt();
+                        tentativas = 1;
                     
                     }
                     
