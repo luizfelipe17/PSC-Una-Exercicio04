@@ -19,10 +19,16 @@ public class Questao08 {
         System.out.print("Informe o valor de 'B': ");
         b = ler.nextInt();
 
-        for (int quantidade = 0; quantidade < b; quantidade++) {
+        for (int quantidade = 1; quantidade <= b; quantidade++) {
 
             soma += a;
 
+        }
+        
+        if (b < 0) {
+            
+            soma = -soma;
+            
         }
 
         System.out.printf("O resultado da operação é: %.2f", soma);
