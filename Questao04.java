@@ -16,70 +16,71 @@ import java.util.Scanner;
 
 public class Questao04 {
 
-    public static void main(String[] args) {
-
-        Scanner ler = new Scanner(System.in);
-
+   public static void main(String[] args){
+        
+        Scanner ler = new Scanner (System.in);
+        
         String resposta;
         int kills, deaths, assists, totalKills = 0, totalDeaths = 0, totalAssists = 0, rodada = 1;
-
-        while (true) {
-
-            System.out.print("Informe os dados da " + rodada + "º rodada: ");
+        
+        while (true){
+            
+            System.out.print("Informe os dados da "+rodada+"º rodada: ");
             System.out.print("\nKILLS: ");
             kills = ler.nextInt();
             System.out.print("DEATHS: ");
             deaths = ler.nextInt();
             System.out.print("ASSISTS: ");
             assists = ler.nextInt();
-
+        
             totalKills += kills;
             totalDeaths += deaths;
             totalAssists += assists;
-
-            if (totalKills <= 5) {
-
+            
+            if (totalKills <= 5){
+                
                 System.out.print("NOOB!!\n");
-
-            } else if (totalKills >= 20) {
-
+                
+            }else if(totalKills >= 20){
+                
                 System.out.print("MASTER!!\n");
-
+                
             }
-
+            
             if (totalDeaths >= 20) {
-
+                
                 System.out.print("Houston, we have a problem\n");
-
+                
             }
-
+            
             if (totalAssists >= 20) {
-
+                
                 System.out.print("TEAM WORK\n");
-
+                
             }
-
+            
             rodada++;
-
-            System.out.println("\nHouve algum vencendor? (Sim) (Não)");
+               
+            System.out.println("\nHouve algum vencendor? (Sim) (Nao)");
             resposta = ler.next();
-
-            if (resposta.equalsIgnoreCase("Sim")) {
-
+            
+            if (resposta.equalsIgnoreCase("Sim")){
+                
                 break;
-
-            } else if (resposta.equalsIgnoreCase("Nao")) {
-
-                System.out.print("\nVamos para a " + rodada + "º rodada\n");
-
-            } else {
-
-                System.out.print("Informe apenas 'SIM' ou 'NAO' ");
-                resposta = ler.next();
-
+                
+            }else if (resposta.equalsIgnoreCase("Nao")){
+                
+                System.out.print("Vamos para a "+rodada+"º rodada\n\n");
+                
+            }else {
+                
+                System.out.print("\nInforme apenas 'SIM' ou 'NAO' ");
+                
             }
-
+            
         }
-
+        
+        
+        
     }
 }
